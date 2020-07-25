@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `product_type`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `product_type` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `gambar` varchar(255) DEFAULT NULL,
+  `gambar` longtext,
   `nama_produk` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -36,7 +36,7 @@ CREATE TABLE `product_type` (
 
 LOCK TABLES `product_type` WRITE;
 /*!40000 ALTER TABLE `product_type` DISABLE KEYS */;
-INSERT INTO `product_type` VALUES (1,'https://drive.google.com/file/d/1zgN5D64k9PA66-3myyxBSHREjMhZWboe/view','Earphone'),(2,'https://drive.google.com/file/d/1URJf2Kb-hwKPTMhaPqFRpr6ULGNZBFwL/view','Speaker'),(3,'https://drive.google.com/file/d/1-wG9qasitQdiJBUfquTOfcPKwycO7ogV/view','TWS'),(4,'https://drive.google.com/file/d/1qOu5APTchrsI4jYWAL7nfTw6ltaediX7/view','Headphone');
+INSERT INTO `product_type` VALUES (1,'https://drive.google.com/file/d/1zgN5D64k9PA66-3myyxBSHREjMhZWboe/view','Earphone'),(2,'https://drive.google.com/file/d/1URJf2Kb-hwKPTMhaPqFRpr6ULGNZBFwL/view','Speaker'),(3,'https://drive.google.com/file/d/1-wG9qasitQdiJBUfquTOfcPKwycO7ogV/view','Headphone'),(4,'https://drive.google.com/file/d/1qOu5APTchrsI4jYWAL7nfTw6ltaediX7/view','TWS');
 /*!40000 ALTER TABLE `product_type` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-10 10:48:15
+-- Dump completed on 2020-04-12 10:56:50
